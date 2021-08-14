@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet", href="{{url_for('static', filename='style.css')}}">
+    </head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/submit", method="post">
+  <label for="physics">Physics</label><br>
+  <input type="number" id="physics" name="physics" value="80"><br>
+  <label for="Chemistry">Chemistry</label><br>
+  <input type="number" id="Chemistry" name="Chemistry" value="80"><br>
+  <label for="Maths">Maths</label><br>
+  <input type="number" id="Maths" name="Maths" value="80"><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
